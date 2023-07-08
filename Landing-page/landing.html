@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/AuthorHouse.png" />
+    <link rel="appl-touch-icon" href="img/logo-new.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <meta
+      name="description"
+      content="Discover a captivating collection of books written by the talented author, Sam. "
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Sam-The-Author &mdash; Begin your literary adventure</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-hero">
+        <header class="header">
+          <a href="#">
+            <img class="logo" src="img/AuthorHouse.png" alt="logo"
+          /></a>
+
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link">Home</a></li>
+              <li><a href="#books" class="main-nav-link">Books</a></li>
+              <li><a href="#aboutus" class="main-nav-link">About us</a></li>
+              <li>
+                <a href="#contact" class="main-nav-link main-nav-link-cta"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </header>
+        <div class="hero container">
+          <div class="hero-text-box">
+            <h1 class="hero-heading">Introducing the Author's House</h1>
+            <p class="hero-text">
+              Welcome to the Author's House, where you'll find an exquisite
+              selection of books penned by talented authors. We take great pride
+              in offering a diverse range of genres and writing styles, ensuring
+              that there's a book to suit every taste. Our authors pour their
+              hearts and souls into their work, creating stories that will
+              captivate and transport you to places you've never been before.
+            </p>
+            <a href="#books" class="hero-btn">BROWSE NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ebook-section" id="books">
+        <div class="container">
+          <h2 class="ebook-header">Our ebooks Collection</h2>
+          <div class="grid grid--col--3">
+            <div>
+              <img class="ebook-img" src="img/coverbook.jpeg" alt="coverbook" />
+              <h3 class="ebook-heading">Journey into the Present</h3>
+              <p class="subheading">
+                Embracing mindfulness and the power within
+              </p>
+              <div>
+                <a href="https://www.amazon.com/" class="btn-link"
+                  >Buy on Amazon</a
+                >
+              </div>
+            </div>
+            <div>
+              <img class="ebook-img" src="img/coverbook.jpeg" alt="coverbook" />
+              <h3 class="ebook-heading">Journey into the Present</h3>
+              <p class="subheading">
+                Embracing mindfulness and the power within
+              </p>
+              <div>
+                <a href="https://www.shopify.com/" class="btn-link"
+                  >Buy on shopify</a
+                >
+              </div>
+            </div>
+            <div>
+              <img class="ebook-img" src="img/coverbook.jpeg" alt="coverbook" />
+              <h3 class="ebook-heading">Journey into the Present</h3>
+              <p class="subheading">
+                Embracing mindfulness and the power within
+              </p>
+              <div>
+                <a href=" https://www.smashwords.com/" class="btn-link"
+                  >Buy on smashwords</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" id="contact">
+        <div class="container">
+          <div class="form-details">
+            <h2 class="form-heading">Message us</h2>
+            <p class="form-text">
+              Have a question? Need assistance? We're here to help! <br /><br />
+              Don't hesitate to reach out to us. Our dedicated support team is
+              just a message away, ready to provide you with the guidance and
+              assistance you need. Whether you have inquiries about our
+              products, need recommendations, or require any kind of support,
+              we're committed to ensuring your satisfaction.
+            </p>
+          </div>
+          <form class="msg-form" action="message">
+            <div class="name-cta">
+              <div>
+                <input
+                  class="msg-box"
+                  id="full-name"
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  class="msg-box"
+                  id="last-name"
+                  type="text"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <input
+                class="msg-box"
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div>
+              <input
+                class="msg-box"
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                class="msg-box"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="write your message here"
+              ></textarea>
+            </div>
+            <div>
+              <input class="msg-btn" type="submit" value="send message" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="aboutus">
+      <div class="container grid grid--col--4 grid-footer">
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              No 30 New star St., 2nd Floor, Akobo Ojurin, Ibadan 200222
+            </p>
+            <p>
+              <a class="footer-link" href="tel:234-803-453-6370"
+                >234-801-234-5678</a
+              ><br /><a class="footer-link" href="mailto:hello@authorhouse.com"
+                >hello@authorhouse.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About AuthorHouse</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="img/AuthorHouse.png" class="logo" alt="authorhouse logo"
+          /></a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="'"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="'"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="'"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2021</span> by AuthorHouse. Inc
+            All right reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
